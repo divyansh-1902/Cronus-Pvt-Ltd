@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection{
+  background: transparent;
+}
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+ display: none;
+}
+
+
+/* For MS Edge */
+.scrollbar {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: gray; /* Custom colors */
+}
+
+.gradient {
+  background: linear-gradient(to top left, #1F1C2C,#928DAB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+html{
+  scroll-behavior: smooth;
+  background-color: black;
+  overflow-x: hidden;
+}
+.codeimg{
+  background-image: url('../public/b5.svg');
+  background-size:50%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  
+}
+.background{
+  background-image: url('../public/background.svg');
+  background-size:50%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  
+}
+.zindex{
+  z-index: 1000;
+}
